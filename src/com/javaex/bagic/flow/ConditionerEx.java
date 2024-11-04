@@ -8,7 +8,10 @@ public class ConditionerEx {
 //		ifEx();
 //		ifEx2();
 //		ifPractice01();
-		switchEx();		
+//		switchEx();		
+//		switchEx2();
+		switchPractice();
+		
 	}
 /*	private static void ifEx() {
 		Scanner scanner = new Scanner(System.in);
@@ -88,31 +91,87 @@ public class ConditionerEx {
 			scanner.close(); 
 		}
 	*/	
-		private static void switchEx() {
-			System.out.print("과목을 선택하세요"
-					+"\n(1.자바  2.C  3.C++  4.파이썬)"
-					+"\n 과목번호: ");
-			Scanner scanner = new Scanner(System.in);
-			int subj = scanner.nextInt();
-			switch (subj) {
-			case 1:	//	sybj == 1
-				System.out.println("R101 입니다.");
+//		private static void switchEx() {
+//			System.out.print("과목을 선택하세요"
+//					+"\n(1.자바  2.C  3.C++  4.파이썬)"
+//					+"\n 과목번호: ");
+//			Scanner scanner = new Scanner(System.in);
+//			int subj = scanner.nextInt();
+//			switch (subj) {
+//			case 1:	//	sybj == 1
+//				System.out.println("R101 입니다.");
+//				break;
+//			case 2:	//	subj == 2
+//				System.out.println("R202 입니다.");
+//				break;
+//			case 3: //	subj == 3
+//				System.out.println("R303 입니다.");
+//				break;	
+//			case 4:	//	subj == 4
+//				System.out.println("R404 입니다.");
+//				break;
+//			default: //	else
+//				System.out.println("상담원에게 문의하세요");
+//				break;
+//			}
+//			
+//			scanner.close();
+//		}
+//		
+//		private static void switchEx2() {
+//			//	1, 3, 5, 7, 8, 10, 12월 -> 31일 
+//			// 2월 -> 28일 
+//			// 4, 6, 9, 11월 -> 30일 
+//			System.out.print("월을 입력하세요" + "\n>>");
+//			Scanner scanner = new Scanner(System.in);
+//			int month = scanner.nextInt ();
+//			switch (month) {
+//			case 1, 3, 5, 7, 8, 10, 12:  
+//				System.out.println("는 31일 입니다.");
+//				break;
+//			case 2:
+//				System.out.println("는 28일 입니다.");
+//				break;
+//			case 4, 6, 9, 11: 
+//				System.out.println("는 30일 입니다.");
+//				break;
+//			default:
+//				System.out.println("bakana"); 
+//		    }
+//			scanner.close();
+//		}
+		
+		private static void switchPractice() {
+			//	TODO: 이 코드를 나중에 enum (열거형) 객체로 다시 만들 예정
+			
+			//	문자열 변수에 문자열로 요일 정보를 입력
+			//	"SUNDAY" -> 휴식 
+			//	"MONDAY" ~ "THURSDAY" -> 열공
+			//	"FRIDAY" -> 열공후 불금
+			//	"SATURDAY" -> 주말
+			String day = "MONDAY";
+			String action;
+			
+			switch (day) {
+			case "SUNDAY": 
+				action = "휴식";
 				break;
-			case 2:	//	subj == 2
-				System.out.println("R202 입니다.");
+			case "MONDAY": 
+			case "TUESDAY":
+			case "WEDNESDAY":
+			case "THURSDAY": 
+				action = "열공";
 				break;
-			case 3: //	subj == 3
-				System.out.println("R303 입니다.");
-				break;	
-			case 4:	//	subj == 4
-				System.out.println("R404 입니다.");
+			case "SATURDAY":
+				action = "주말";
 				break;
-			default: //	else
-				System.out.println("상담원에게 문의하세요");
+			default: 
+				action = "??"; 
 				break;
 			}
 			
-			scanner.close();
+			System.out.println(day + "에는 " + action);
+			
+			}
 		}
-	}
 
