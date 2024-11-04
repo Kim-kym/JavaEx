@@ -10,7 +10,9 @@ public class ConditionerEx {
 //		ifPractice01();
 //		switchEx();		
 //		switchEx2();
-		switchPractice();
+//		switchPractice();
+//	    ifSwitchEx();
+	    ifSwitchEx2();
 		
 	}
 /*	private static void ifEx() {
@@ -141,37 +143,67 @@ public class ConditionerEx {
 //			scanner.close();
 //		}
 		
-		private static void switchPractice() {
-			//	TODO: 이 코드를 나중에 enum (열거형) 객체로 다시 만들 예정
-			
-			//	문자열 변수에 문자열로 요일 정보를 입력
-			//	"SUNDAY" -> 휴식 
-			//	"MONDAY" ~ "THURSDAY" -> 열공
-			//	"FRIDAY" -> 열공후 불금
-			//	"SATURDAY" -> 주말
-			String day = "MONDAY";
-			String action;
-			
-			switch (day) {
-			case "SUNDAY": 
-				action = "휴식";
-				break;
-			case "MONDAY": 
-			case "TUESDAY":
-			case "WEDNESDAY":
-			case "THURSDAY": 
-				action = "열공";
-				break;
-			case "SATURDAY":
-				action = "주말";
-				break;
-			default: 
-				action = "??"; 
-				break;
-			}
-			
-			System.out.println(day + "에는 " + action);
-			
+//		private static void switchPractice() {
+//			//	TODO: 이 코드를 나중에 enum (열거형) 객체로 다시 만들 예정
+//			
+//			//	문자열 변수에 문자열로 요일 정보를 입력
+//			//	"SUNDAY" -> 휴식 
+//			//	"MONDAY" ~ "THURSDAY" -> 열공
+//			//	"FRIDAY" -> 열공후 불금
+//			//	"SATURDAY" -> 주말
+//			String day = "MONDAY";
+//			String action;
+//			
+//			switch (day) {
+//			case "SUNDAY": 
+//				action = "휴식";
+//				break;
+//			case "MONDAY": 
+//			case "TUESDAY":
+//			case "WEDNESDAY":
+//			case "THURSDAY": 
+//				action = "열공";
+//				break;
+//			case "SATURDAY":
+//				action = "주말";
+//				break;
+//			default: 
+//				action = "??"; 
+//				break;
+//			}
+//			
+//			System.out.println(day + "에는 " + action);
+//			
+//			}
+//		private static void ifSwitchEx() {
+//			
+//		System.out.print("점수를 입력하세요 >>");
+//		Scanner scanner = new Scanner(System.in);
+//		int num = scanner.nextInt();
+//		if (num % 3 == 0) { 
+//			System.out.println("3의 배수 입니다.");
+//		} else { System.out.println(num + "은 3의 배수가 아닙니다.");		
+//		}
+//	}	
+//}
+
+		private static void ifSwitchEx2() {
+			System.out.print("점수를 입력하세요 >>");
+			Scanner scanner = new Scanner(System.in);
+			int score = scanner.nextInt();
+			if (score >= 90) {
+				System.out.println("A등급");
+			} else if 
+			((score >= 80) && (score < 90)) {
+				System.out.println("B등급");
+			} else if 
+			((score >= 70) && (score < 80)) {
+				System.out.println("C등급");
+			} else if 
+			((score >= 60) && (score < 70)) {
+				System.out.println("D등급");
+			} else {
+				System.out.println("F등급");
 			}
 		}
-
+	}
