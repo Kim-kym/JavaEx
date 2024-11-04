@@ -12,8 +12,8 @@ import java.util.Scanner;
 public class ConsoleEx {
 
 	public static void main(String[] args) {
-//		consoleOutput();
-		consoleInput();
+		consoleOutput();
+//		consoleInput();
 
 	}
 	//	콘솔 입력 예제 
