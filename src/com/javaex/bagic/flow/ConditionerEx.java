@@ -205,5 +205,7 @@ public class ConditionerEx {
 			} else {
 				System.out.println("F등급");
 			}
+			
+		    scanner.close();
 		}
 	}
