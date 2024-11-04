@@ -60,7 +60,7 @@ public class LoopEx {
 			scanner.close();
 			}
 		private static void forGugu() {
-			//	단을 입력 받아서 해당 단의 구구표를 ㅜㄹ력
+			//	단을 입력 받아서 해당 단의 구구표를 출력
 			//	(for loop)
 			//	for (반복변수 초기화; 반복 조건 확인; 반복변수 증감)
 		Scanner scanner = new Scanner(System.in);
