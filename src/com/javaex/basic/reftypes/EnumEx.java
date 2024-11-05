@@ -42,7 +42,7 @@ public class EnumEx {
 	}
 	private static void switchEnumPractice () {
 
-		Week day = Week.TUESDAY;
+		Week day = Week.FRIDAY;
 		String action;
 		
 		switch (day) {
