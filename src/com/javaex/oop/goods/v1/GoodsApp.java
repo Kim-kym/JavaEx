@@ -11,18 +11,19 @@ class Goods {
 public class GoodsApp {
 
 	public static void main(String[] args) {
-		Goods camera = new Goods(); 
-		Goods noteBook = new Goods();
-		Goods cup = new Goods();
+		Goods camera = new Goods(); 		
 		//	생성자 호출 -> 인스턴스 생성 -> camera로 참조 
-		
 		camera.name = "Nikon";
 		camera.price = 400_000;
 		System.out.printf("%s -> %,d%n", camera.name, camera.price);
 		
+		Goods noteBook = new Goods();
+		
 		noteBook.name = "LG그램";
 		noteBook.price = 900_000;
 		System.out.printf("%s -> %,d%n", noteBook.name, noteBook.price);
+		
+		Goods cup = new Goods();
 		
 		cup.name = "머그컵";
 		cup.price = 2_000;
