@@ -6,7 +6,7 @@ public class LangClassTest {
 		Point p = new Point(10, 10);
 		
 		//	Java의 최상위 클래스는 Object
-		// 	->기본저ㅏㄱ으로 Object의 모든 기능을 상속 
+		// 	->기본적으로 Object의 모든 기능을 상속 
 		System.out.println(p.getClass().getName());
 		System.out.println(p.hashCode());	//	객체 식별자 
 		System.out.println(p.toString());	//	객체 내부 데이터를 문자열로 반환
